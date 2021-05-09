@@ -24,12 +24,12 @@ def printBoard(board):
             if type(board[i]) == int:
                 output += " | " + str(board[i]) + " |\n"
             else:
-                output += f" | {bcolors.OKGREEN}{bcolors.BOLD}{board[i]}{bcolors.ENDC} |\n"
+                output += f" | {board[i]} |\n"
         else:
             if type(board[i]) == int:
                 output += " | " + str(board[i]) + ""
             else:
-                output += f" | {bcolors.OKGREEN}{bcolors.BOLD}{board[i]}{bcolors.ENDC}"
+                output += f" | {board[i]}"
     return output
 
 def check(arr, player):
